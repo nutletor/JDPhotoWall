@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LaunchGuidanceView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVp-6q-9GB" userLabel="logoView">
+                    <rect key="frame" x="0.0" y="427" width="320" height="88"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chujian_withText" translatesAutoresizingMaskIntoConstraints="NO" id="ugL-IO-ejY" userLabel="logoImgView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ugL-IO-ejY" firstAttribute="leading" secondItem="mVp-6q-9GB" secondAttribute="leading" id="Bqi-wB-WUe"/>
+                        <constraint firstItem="ugL-IO-ejY" firstAttribute="top" secondItem="mVp-6q-9GB" secondAttribute="top" id="Jjl-cH-Vyf"/>
+                        <constraint firstAttribute="height" constant="88" id="WJj-m7-3IT"/>
+                        <constraint firstAttribute="trailing" secondItem="ugL-IO-ejY" secondAttribute="trailing" id="jRD-ce-bY2"/>
+                        <constraint firstAttribute="bottom" secondItem="ugL-IO-ejY" secondAttribute="bottom" id="zOd-Do-oWi"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2l-7M-OcK" userLabel="photoWallView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="427"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="p2l-7M-OcK" secondAttribute="height" multiplier="3:4" id="WnP-I8-2Ey"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EV6-Tf-S8h" userLabel="boyBtn">
+                    <rect key="frame" x="0.0" y="515" width="160" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EV6-Tf-S8h" secondAttribute="height" multiplier="3:1" id="cYj-mo-St6"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="iam_boy">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dT-dq-Ub3" userLabel="girlBtn">
+                    <rect key="frame" x="160" y="515" width="160" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="0dT-dq-Ub3" secondAttribute="height" multiplier="3:1" id="uUf-KG-1Lm"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="iam_girl">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EV6-Tf-S8h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2yZ-oL-PA5"/>
+                <constraint firstItem="p2l-7M-OcK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6wq-Y6-1Vs"/>
+                <constraint firstItem="EV6-Tf-S8h" firstAttribute="height" secondItem="0dT-dq-Ub3" secondAttribute="height" id="FsQ-Gg-DIx"/>
+                <constraint firstAttribute="trailing" secondItem="mVp-6q-9GB" secondAttribute="trailing" id="K1q-S5-58D"/>
+                <constraint firstAttribute="bottom" secondItem="0dT-dq-Ub3" secondAttribute="bottom" id="PT7-iw-vOK"/>
+                <constraint firstAttribute="bottom" secondItem="EV6-Tf-S8h" secondAttribute="bottom" id="Pjd-hn-mMi"/>
+                <constraint firstItem="p2l-7M-OcK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RvV-Eg-TBA"/>
+                <constraint firstItem="0dT-dq-Ub3" firstAttribute="leading" secondItem="EV6-Tf-S8h" secondAttribute="trailing" id="SRP-Yv-sbl"/>
+                <constraint firstAttribute="trailing" secondItem="p2l-7M-OcK" secondAttribute="trailing" id="aY7-Tb-A83"/>
+                <constraint firstAttribute="trailing" secondItem="0dT-dq-Ub3" secondAttribute="trailing" id="hVE-2d-Fx0"/>
+                <constraint firstItem="0dT-dq-Ub3" firstAttribute="top" secondItem="mVp-6q-9GB" secondAttribute="bottom" id="lwk-Gj-Znd"/>
+                <constraint firstItem="mVp-6q-9GB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pCT-wR-d79"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="boyBtn" destination="EV6-Tf-S8h" id="q5O-zd-7jp"/>
+                <outlet property="girlBtn" destination="0dT-dq-Ub3" id="FKn-p0-82K"/>
+                <outlet property="logoView" destination="mVp-6q-9GB" id="AoR-es-Ltp"/>
+                <outlet property="logoView_height" destination="WJj-m7-3IT" id="XMG-xX-6aL"/>
+                <outlet property="photoWallView" destination="p2l-7M-OcK" id="fZ0-0g-KFA"/>
+            </connections>
+            <point key="canvasLocation" x="353" y="314"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chujian_withText" width="375" height="54"/>
+        <image name="iam_boy" width="187" height="62"/>
+        <image name="iam_girl" width="187" height="62"/>
+    </resources>
+</document>
