@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Iuq-CZ-V3V" customClass="LaunchAccessView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qy-S4-sOu" userLabel="logoView">
+                    <rect key="frame" x="0.0" y="427" width="320" height="88"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chujian_withText" translatesAutoresizingMaskIntoConstraints="NO" id="Wof-gp-aMJ" userLabel="logoImgView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Wof-gp-aMJ" firstAttribute="leading" secondItem="7qy-S4-sOu" secondAttribute="leading" id="5cX-tF-p6A"/>
+                        <constraint firstItem="Wof-gp-aMJ" firstAttribute="top" secondItem="7qy-S4-sOu" secondAttribute="top" id="NX0-Cl-w1N"/>
+                        <constraint firstAttribute="trailing" secondItem="Wof-gp-aMJ" secondAttribute="trailing" id="NrT-AF-MsL"/>
+                        <constraint firstAttribute="height" constant="88" id="Xa1-S4-S3F"/>
+                        <constraint firstAttribute="bottom" secondItem="Wof-gp-aMJ" secondAttribute="bottom" id="wu2-9z-j7q"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQJ-2d-vj7" userLabel="photoWallView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="427"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwg-Uz-n0A" userLabel="tapView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="427"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tapImg_boy" translatesAutoresizingMaskIntoConstraints="NO" id="Vvb-RB-uOh" userLabel="tapImgView">
+                                    <rect key="frame" x="108" y="187" width="149" height="107"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="centerY" secondItem="Vvb-RB-uOh" secondAttribute="centerY" constant="-27" id="APK-TF-j9B"/>
+                                <constraint firstAttribute="centerX" secondItem="Vvb-RB-uOh" secondAttribute="centerX" constant="6" id="rHA-dj-QGv"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="rwg-Uz-n0A" firstAttribute="leading" secondItem="AQJ-2d-vj7" secondAttribute="leading" id="RX4-Ua-S14"/>
+                        <constraint firstAttribute="trailing" secondItem="rwg-Uz-n0A" secondAttribute="trailing" id="U4y-Lb-iug"/>
+                        <constraint firstItem="rwg-Uz-n0A" firstAttribute="top" secondItem="AQJ-2d-vj7" secondAttribute="top" id="hII-Mp-vmB"/>
+                        <constraint firstAttribute="bottom" secondItem="rwg-Uz-n0A" secondAttribute="bottom" id="vAB-cb-JoY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0n-x6-NbG" userLabel="registerBtn">
+                    <rect key="frame" x="0.0" y="515" width="160" height="53"/>
+                    <color key="backgroundColor" red="0.22352941176470587" green="0.59999999999999998" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="v0n-x6-NbG" secondAttribute="height" multiplier="3:1" id="nTW-dN-yba"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                    <state key="normal" title="注册">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2Q-j5-jSq" userLabel="loginBtn">
+                    <rect key="frame" x="160" y="515" width="160" height="53"/>
+                    <color key="backgroundColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="D2Q-j5-jSq" secondAttribute="height" multiplier="3:1" id="K41-TH-iKi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                    <state key="normal" title="登录">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="v0n-x6-NbG" firstAttribute="height" secondItem="D2Q-j5-jSq" secondAttribute="height" id="2ir-RR-y3t"/>
+                <constraint firstAttribute="trailing" secondItem="AQJ-2d-vj7" secondAttribute="trailing" id="6fg-cc-eVD"/>
+                <constraint firstItem="D2Q-j5-jSq" firstAttribute="leading" secondItem="v0n-x6-NbG" secondAttribute="trailing" id="9wf-Vl-6Ab"/>
+                <constraint firstItem="AQJ-2d-vj7" firstAttribute="leading" secondItem="Iuq-CZ-V3V" secondAttribute="leading" id="EFa-at-sLP"/>
+                <constraint firstAttribute="trailing" secondItem="D2Q-j5-jSq" secondAttribute="trailing" id="RyY-kw-2zq"/>
+                <constraint firstItem="7qy-S4-sOu" firstAttribute="leading" secondItem="Iuq-CZ-V3V" secondAttribute="leading" id="Ubk-I7-XdV"/>
+                <constraint firstAttribute="bottom" secondItem="D2Q-j5-jSq" secondAttribute="bottom" id="Y3Y-jl-fdX"/>
+                <constraint firstItem="D2Q-j5-jSq" firstAttribute="top" secondItem="7qy-S4-sOu" secondAttribute="bottom" id="Zaz-d6-z1b"/>
+                <constraint firstItem="AQJ-2d-vj7" firstAttribute="width" secondItem="AQJ-2d-vj7" secondAttribute="height" multiplier="3:4" id="Zgl-0w-4WH"/>
+                <constraint firstItem="v0n-x6-NbG" firstAttribute="leading" secondItem="Iuq-CZ-V3V" secondAttribute="leading" id="hj2-ZP-sIq"/>
+                <constraint firstAttribute="bottom" secondItem="v0n-x6-NbG" secondAttribute="bottom" id="lau-h3-LGD"/>
+                <constraint firstAttribute="trailing" secondItem="7qy-S4-sOu" secondAttribute="trailing" id="miG-FQ-Pme"/>
+                <constraint firstItem="AQJ-2d-vj7" firstAttribute="top" secondItem="Iuq-CZ-V3V" secondAttribute="top" id="tVj-Pd-aoK"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="loginBtn" destination="D2Q-j5-jSq" id="v5A-cN-Wph"/>
+                <outlet property="logoView" destination="7qy-S4-sOu" id="5sy-ca-g5D"/>
+                <outlet property="logoView_height" destination="Xa1-S4-S3F" id="BEx-Id-Xwe"/>
+                <outlet property="photoWallView" destination="AQJ-2d-vj7" id="Wwi-FS-LiP"/>
+                <outlet property="registerBtn" destination="v0n-x6-NbG" id="PSD-5d-dRt"/>
+                <outlet property="tapImgView" destination="Vvb-RB-uOh" id="38E-eH-b3t"/>
+                <outlet property="tapView" destination="rwg-Uz-n0A" id="kkB-U2-NeO"/>
+            </connections>
+            <point key="canvasLocation" x="263" y="340"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chujian_withText" width="375" height="54"/>
+        <image name="tapImg_boy" width="149" height="107"/>
+    </resources>
+</document>
